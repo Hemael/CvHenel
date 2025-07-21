@@ -133,8 +133,8 @@ const Accueil = ({ onLogout }) => {
         </section>
         <div className="small-box autre">
                 <h3>Autres</h3>
-                <p>mon git : https://github.com/Hemael </p>
-                <p> linkedin : https://www.linkedin.com/in/chloe-legouas/</p>
+                <p> <a href="https://github.com/Hemael"> github </a> </p>
+                <p> <a href="https://www.linkedin.com/in/chloe-legouas/">linkedin</a></p>
                 
         </div>
       </main>
