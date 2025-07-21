@@ -6,9 +6,13 @@ const Accueil = ({ onLogout }) => {
   return (
     <div className="accueil-container">
       <header className="accueil-header">
-        <h1>Alternance</h1>
-        <button onClick={onLogout}>Se déconnecter</button>
-      </header>
+            <div className="header-info">
+                <h1>Alternance</h1>
+                <p>Chloé Legouas — 06 01 77 72 59 - chloe.legouas@hotmail.fr</p>
+            </div>
+            <button onClick={onLogout}>Se déconnecter</button>
+    </header>
+
 
       <main className="accueil-main">
         <section className="motivation-box">
@@ -31,7 +35,7 @@ const Accueil = ({ onLogout }) => {
         </section>
 
         <section className="row-box">
-          <section className="info-box">
+          <section className="info-box experiences">
             <h2>Expériences professionnelles</h2>
             <ul>
               <li>
@@ -127,6 +131,12 @@ const Accueil = ({ onLogout }) => {
           </div>
 
         </section>
+        <div className="small-box autre">
+                <h3>Autres</h3>
+                <p>mon git : https://github.com/Hemael </p>
+                <p> linkedin : https://www.linkedin.com/in/chloe-legouas/</p>
+                
+        </div>
       </main>
     </div>
   );

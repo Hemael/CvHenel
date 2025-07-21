@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import photoDP from "./asset/photoH.png";
 import "./Login.css";
+const secretPin = process.env.REACT_APP_SECRET_PIN;
 
 const Login = ({ onLogin }) => {
   const [pin, setPin] = useState("");
@@ -9,7 +10,7 @@ const Login = ({ onLogin }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (pin.trim().toUpperCase() === "SKF") {
+    if (pin.trim().toUpperCase() === secretPin) {
       setError("");
       onLogin(); // met à jour l’état auth dans App
     } else {

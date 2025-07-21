@@ -1,10 +1,26 @@
 body {
-  background: #0e0e0e;
+
+
+  background: #0e0e0e ;
   color: #f5f5f5;
   font-family: "Segoe UI", sans-serif;
   margin: 0;
   padding: 0;
 }
+
+.accueil-container::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./asset/Fichier1.png") center center / cover no-repeat fixed;
+  opacity: 0.3; /* ajuste l'opacité ici */
+  z-index: -1;
+}
+
+
 
 .accueil-container {
   display: flex;
@@ -109,6 +125,7 @@ body {
   line-height: 1.5;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
   transition: transform 0.2s ease;
+  justify-content: center;
 }
 
 .info-box:hover {
@@ -130,7 +147,8 @@ body {
   line-height: 1.5;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
   transition: transform 0.2s ease;
-  margin: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .small-box:hover {
@@ -184,4 +202,78 @@ a:hover {
   .small-box {
     flex: 1 1 100%;
   }
+}
+
+
+.row-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  align-items: center; /* ✅ pour centrer verticalement */
+}
+
+.info-box.experiences {
+  flex: 2 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* ✅ centre le contenu en hauteur */
+  background: #161616;
+  border: 2px solid #d4af37;
+  border-radius: 15px;
+  padding: 1rem;
+  line-height: 1.5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  transition: transform 0.2s ease;
+}
+
+.info-box.experiences:hover {
+  transform: translateY(-3px);
+}
+
+.info-box.experiences h2 {
+  margin: 0 0 0.5rem 0;
+  color: #ffd700;
+  font-size: 1.3rem;
+}
+
+.info-box.experiences ul {
+  padding-left: 1rem;
+  list-style-type: disc;
+}
+
+.info-box.experiences li {
+  margin-bottom: 0.8rem;
+}
+
+.info-box.experiences strong {
+  color: #fff;
+}
+
+.info-box.experiences em {
+  color: #ccc;
+  font-style: italic;
+}
+
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-info h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #d4af37;
+}
+
+.header-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.autre{
+    flex: auto;
 }
