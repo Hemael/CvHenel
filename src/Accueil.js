@@ -1,6 +1,6 @@
 import React from "react";
 import "./Accueil.css";
-import photoProfil from "./asset/photoH.png";
+import photoProfil from "./asset/photodp.jpg";
 
 const Accueil = ({ onLogout }) => {
   return (
@@ -20,7 +20,7 @@ const Accueil = ({ onLogout }) => {
             <h2>Ma motivation</h2>
             <h4>Mastère Spécialisé Manager de la Sécurité des Systèmes d’Information</h4>
             <p>
-              Je suis une jeune étudiante à la recherche d’une alternance dans le domaine de la cybersécurité, un univers qui attise énormément ma curiosité. Je suis passionnée par tout ce qui touche au développement en général, que ce soit le front, le back ou la sécurité des systèmes.
+              Je suis une jeune étudiante diplomée d'un bac +5 actuellement acceptée au CESI de Rouen, je suis à la recherche d’une alternance dans le domaine de la cybersécurité, un univers qui attise énormément ma curiosité. Je suis passionnée par tout ce qui touche au développement en général, que ce soit le front, le back ou la sécurité des systèmes.
             </p>
             <p>
               Après de longues années à développer ma créativité dans le design, je me suis tournée vers le jeu vidéo. Mais c’est dans le développement web que je me suis sentie le plus épanouie. La création de sites fonctionnels, sécurisés et accessibles est un véritable défi qui me motive à progresser.
@@ -117,7 +117,7 @@ const Accueil = ({ onLogout }) => {
                     Je souhaite approfondir mes connaissances dans le développement, en particulier dans le domaine de la cybersécurité. J’aimerais découvrir l’ensemble des aspects du développement pour en comprendre pleinement le fonctionnement et suivre ses évolutions. Je veux rester à jour face aux nouvelles technologies et ne jamais prendre de retard face aux innovations.
                 </p>
                 <p>
-                    Je recherche un poste en alternance qui m’offre des possibilités d’apprentissage, encadrée par un mentor capable de m’accompagner dans les défis techniques ou humains que je rencontrerai. Je souhaite travailler dans un environnement calme où règne l’entraide, afin d’apprendre, d’échanger et de partager mes compétences.
+                    Je recherche un poste en alternance qui m’offre des possibilités d’apprentissage, encadrée par un mentor afin de m’accompagner dans les défis techniques ou humains que je rencontrerai. Je souhaite travailler dans un environnement calme où règne l’entraide, afin d’apprendre, d’échanger et de partager mes compétences.
                 </p>
             </div>
           <div className="small-box">
